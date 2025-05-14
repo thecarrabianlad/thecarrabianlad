@@ -5,6 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Define the custom font */
+@font-face {
+    font-family: 'Dune_Rise';
+    src: url('../fonts/Dune_Rise.ttf') format('ttf'),
+         url('../fonts/Dune_Rise.otf') format('otf');
+  
+}
+
+/* Apply the custom font */
+.logo-font {
+    font-family: 'Dune_Rise';
+
+}
 .regular-font {
   font-family: "Offside", sans-serif;
   font-weight: 400;
@@ -35,4 +48,3 @@
     font-size: 18px;
 }
     /* padding: 10px; */
-}
