@@ -8,8 +8,8 @@
 /* Define the custom font */
 @font-face {
     font-family: 'Dune_Rise';
-    src: url('../fonts/Dune_Rise.ttf') format('ttf'),
-         url('../fonts/Dune_Rise.otf') format('otf');
+    src: url('../fonts/Dune_Rise.ttf') format('truetype'),
+         url('../fonts/Dune_Rise.otf') format('opentype');
   
 }
 
@@ -37,14 +37,37 @@
     align-items: center;
 }
 .navbar{
-    background-color: #333;
+    /* background-color: #333; */
     color: white;
     padding: 10px 20px;
+    padding: 2vh;
 }
 .nav-links{
-    color: white;
+    color: rgb(164, 164, 164);
     text-decoration: none;
     margin-right: 1vw;
     font-size: 18px;
 }
+.nav-links:hover{
+    color: #ffffff;
+}
     /* padding: 10px; */
+.landing-page {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    background-image: url('../imges-assets/stars-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: 0; /* Set the stacking context */
+}
+
+.landing-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place the overlay behind the content */
+}
