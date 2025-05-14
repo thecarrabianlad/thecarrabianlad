@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.regular-font {
+  font-family: "Offside", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+.navbar{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+    margin-right: 1vw;
+    font-size: 18px;
+}
+    /* padding: 10px; */
+}
