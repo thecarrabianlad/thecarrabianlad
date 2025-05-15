@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
     <title>CARRABIANLAD</title>
 </head>
 
 <body>
-
+<div id="preloader">
+  <!-- Your preloader animation here -->
+   <div class="planet"></div>
+</div>
     <!-- landing-page -->
-
+<div id="main-content" style="display:none;">
     <div class="landing-page">
 
         <!-- navbar -->
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="./imges-assets/stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
         <div class="navbar flex justify-between items-center">
             <div class="logo">
@@ -27,25 +35,29 @@
                 <a href="#contact" class="nav-links">Contact</a>
             </div>
         </div>
-        <div class="hero"> 
+        <div class="hero">
 
             <div id="container3D"></div>
             <!-- tittle -->
-            
-            
-            
+            <h1 class="tittle sunlit-text">The Carrabian Lad</h1>
+            <p class="white-font soft-glow soft-shadow block marg-10 hero-text">Maxx | Forging Stories in Motion & Code
+            </p>
+            <p class="white-font soft-glow block marg-10 hero-text">Visual storytelling, digital wizardry, and
+                interactive design.</p>
+
+
         </div>
-        
+
     </div>
-    
+
     <!-- projects -->
     <div class="projects-page"></div>
 
 
 
-
+</div>
     <script type="module" src="./scripts/main.js"></script>
-    
+
 </body>
 
 </html>

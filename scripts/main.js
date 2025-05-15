@@ -102,3 +102,23 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const preloader = document.getElementById('preloader');
+    preloader.classList.add('fade-out');
+
+    // Wait for the fade transition to finish before hiding completely and showing main content
+    preloader.addEventListener('transitionend', () => {
+      preloader.style.display = 'none';
+
+      const mainContent = document.getElementById('main-content');
+      mainContent.style.display = 'block';
+
+      startHomepageAnimation();
+    }, { once: true }); // only listen once
+  }, 2500); // 2.5 seconds delay before fade
+});
+
+function startHomepageAnimation() {
+  // Trigger your homepage animations here
+}
