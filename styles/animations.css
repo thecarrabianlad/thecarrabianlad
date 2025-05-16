@@ -4,6 +4,16 @@ animation: introx 1.3s ease-in-out forwards;
 .tittle{
     animation: introx 1s ease-in-out forwards;
 }
+.buts{
+   animation: introx 1s ease-in-out forwards;
+}
+
+.regular-font{
+  animation: introy 1.3s ease-in-out forwards;
+}
+.logo{
+  animation: introy 1.3s ease-in-out forwards;  
+}
 @keyframes introx {
     0%{
         transform: translateX(-10%);
@@ -14,7 +24,16 @@ animation: introx 1.3s ease-in-out forwards;
         opacity: 1;
     }
 }
-
+@keyframes introy {
+    0%{
+        transform: translatey(-40%);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
 .planet {
   display: block;
   width: 125px;
