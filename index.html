@@ -6,60 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <title>CARRABIANLAD</title>
 </head>
 
 <body>
-<div id="preloader">
-  <!-- Your preloader animation here -->
-   <div class="planet"></div>
-</div>
+    <div id="preloader">
+        <!-- Your preloader animation here -->
+        <div class="planet"></div>
+    </div>
     <!-- landing-page -->
-<div id="main-content" style="display:none;">
-    <div class="landing-page">
+    <div id="main-content" style="display:none;">
+        <div class="landing-page">
 
-        <!-- navbar -->
-        <video autoplay muted loop playsinline id="bgVideo">
-            <source src="./imges-assets/stars.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+            <!-- navbar -->
+            <video autoplay muted loop playsinline id="bgVideo">
+                <source src="./imges-assets/Stars(480).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-        <div class="navbar flex justify-between items-center">
-            <div class="logo">
-                <h2 class="logo-font">CARRABIANLAD</h2>
+            <div class="navbar flex justify-between items-center">
+                <div class="logo">
+                    <h2 class="logo-font">CARRABIANLAD</h2>
+                </div>
+                <div class="regular-font linko">
+                    <a href="#home" class="nav-links">Home</a>
+                    <a href="#about" class="nav-links">About</a>
+                    <a href="#services" class="nav-links">Services</a>
+                    <a href="#contact" class="nav-links">Contact</a>
+                </div>
             </div>
-            <div class="regular-font">
-                <a href="#home" class="nav-links">Home</a>
-                <a href="#about" class="nav-links">About</a>
-                <a href="#services" class="nav-links">Services</a>
-                <a href="#contact" class="nav-links">Contact</a>
-            </div>
-        </div>
-        <div class="hero">
+            <div class="hero">
 
-            <div id="container3D"></div>
-            <!-- tittle -->
-            <h1 class="tittle sunlit-text">The Carrabian Lad</h1>
-            <p class="white-font soft-glow soft-shadow block marg-10 hero-text">Maxx | Forging Stories in Motion & Code
-            </p>
-            <p class="white-font soft-glow block marg-10 hero-text">Visual storytelling, digital wizardry, and
-                interactive design.</p>
+                <div id="container3D"></div>
+                <!-- tittle -->
+                <h1 class="tittle sunlit-text">The Carrabian Lad</h1>
+                <p class="white-font soft-glow soft-shadow block marg-10 hero-text">Maxx | Forging Stories in Motion &
+                    Code
+                </p>
+                <p class="white-font soft-glow block marg-10 hero-text">Visual storytelling, digital wizardry, and
+                    interactive design.</p>
                 <div class="buts">
-
                     <button class="btns" id="btn1">PROJECTS</button>
                     <button class="btns" id="btn2">CONTACT</button>
                 </div>
 
+            </div>
+            <div class="icons">
+                <a href="https:/instagram.com" target="_blank">
+
+                    <img src="./imges-assets/instagram.png" alt="instagram" class="icopng">
+
+                </a>
+                <a href="" target="_blank">
+
+                    <img src="./imges-assets/telegram.png" alt="telegram" class="icopng">
+
+                </a>
+                <a href="" target="_blank">
+
+                    <img src="./imges-assets/github.png" alt="github" class="icopng">
+                </a>
+            </div>
         </div>
 
+        <!-- projects -->
+        <div class="projects-page">
+
+
+
+
+
+
+
+
+        </div>
+
+
+
     </div>
-
-    <!-- projects -->
-    <div class="projects-page"></div>
-
-
-
-</div>
     <script type="module" src="./scripts/main.js"></script>
 
 </body>

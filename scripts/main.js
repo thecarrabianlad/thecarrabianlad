@@ -47,7 +47,14 @@ function setShipPosition() {
     ship.position.x = 0; // Center horizontally
     ship.scale.set(0.6, 0.6, 0.6); // Scale down for mobile
     ship.position.y = -0.5; // Adjust vertical position
-  } else {
+  } 
+  else if (window.innerWidth <= 1220) {
+    // Tablet settings
+    ship.position.x = 0; // Center horizontally
+    ship.scale.set(0.8, 0.8, 0.8); // Scale down for tablet
+    ship.position.y = -0.7; // Adjust vertical position
+  }
+  else {
     // Desktop settings
     const margin = 1.5; // Appears ~20–30px from right
     ship.position.x = (width / 2) - margin;
@@ -122,3 +129,54 @@ window.addEventListener('load', () => {
 function startHomepageAnimation() {
   // Trigger your homepage animations here
 }
+
+let lastFrameTime = 0;
+const targetFPS = 30;
+const frameInterval = 1000 / targetFPS;
+
+function animatex(time) {
+  requestAnimationFrame(animatex);
+
+  if (time - lastFrameTime < frameInterval) return;
+  lastFrameTime = time;
+
+  if (ship) {
+    ship.rotation.y += ((mouseX * 0.5) - ship.rotation.y) * 0.05;
+    ship.rotation.x += ((mouseY * 0.2) - ship.rotation.x) * 0.05;
+
+    ship.rotation.y = THREE.MathUtils.clamp(ship.rotation.y, -0.6, 0.6);
+    ship.rotation.x = THREE.MathUtils.clamp(ship.rotation.x, -0.3, 0.3);
+  }
+
+  renderer.render(scene, camera);
+}
+
+const isLowEndDevice = navigator.hardwareConcurrency <= 4;
+targetFPS = isLowEndDevice ? 20 : 30;
+
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+if (!isTouchDevice) {
+  document.addEventListener('mousemove', (event) => {
+    mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+    mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+  });
+}
+
+if (!isLowEndDevice) {
+  const warmLight = new THREE.DirectionalLight(0xfff4cc, 2.5);
+  warmLight.position.set(10, 20, 10);
+  warmLight.castShadow = true;
+  scene.add(warmLight);
+
+  const topLight = new THREE.DirectionalLight(0xffffff, 1);
+  topLight.position.set(500, 500, 500);
+  scene.add(topLight);
+}
+
+if (isLowEndDevice) {
+  renderer.setPixelRatio(0.75); // reduce GPU load
+} else {
+  renderer.setPixelRatio(window.devicePixelRatio);
+}
+renderer.setSize(window.innerWidth, window.innerHeight);

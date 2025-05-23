@@ -1,0 +1,141 @@
+@media screen and (max-width: 500px) {
+    .linko {
+        visibility: hidden;
+        display: none;
+    }
+
+    .tittle {
+        font-size: 50px;
+        margin-top: 14vh;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .hero-text {
+        font-size: 13px;
+        margin-top: 2vh;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .btns {
+        /* width: 19vw; */
+        align-items: center;
+        /* left: auto; */
+
+        /* right: auto; */
+    }
+
+    .buts {
+        /* background: red; */
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) and ( min-width: 501px) {
+    .linko {
+        visibility: hidden;
+        display: none;
+    }
+
+    .tittle {
+        font-size: 70px;
+        margin-top: 14vh;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .hero-text {
+        font-size: 19px;
+        margin-top: 2vh;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .btns {
+        /* width: 19vw; */
+        align-items: center;
+        /* left: auto; */
+
+        /* right: auto; */
+    }
+
+    .buts {
+        /* background: red; */
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1220px ) and (min-width: 769px) {
+    .linko {
+        /* visibility: hidden; */
+        /* display: none; */
+    }
+
+    .hero-text {
+        font-size: 19px;
+        margin-top: 2vh;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .btns {
+        /* width: 19vw; */
+        align-items: center;
+        /* left: auto; */
+
+        /* right: auto; */
+    }
+
+    .buts {
+        /* background: red; */
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+.tittle{
+    font-size: 70px;
+    margin-top: 14vh;
+    text-align: center;
+    margin-left: 0px;
+}
+}
+
+@media screen and (min-width: 1221px) and (max-width: 1400px) {
+    .linko {
+        /* visibility: hidden; */
+        /* display: none; */
+    }
+    .tittle {
+        font-size: 90px;
+        margin-top: 14vh;
+        /* text-align: center; */
+        /* margin-left: 0px; */
+    }
+    .hero-text {
+        font-size: 20px;
+        margin-top: 2vh;
+        /* text-align: center; */
+        /* margin-left: 0px; */
+    }
+
+    .btns {
+        /* width: 19vw; */
+        /* align-items: center; */
+        /* left: auto; */
+
+        /* right: auto; */
+    }
+
+    .buts {
+        /* background: red; */
+        /* margin-left: 0px; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+
+}
