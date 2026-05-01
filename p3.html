@@ -1,0 +1,104 @@
+<section class="video-gallery">
+
+  <!-- COPY THIS CARD TO ADD MORE -->
+  <div class="video-card">
+    <video class="portfolio-video" preload="metadata">
+      <source src="assets/vid1.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">Commercial Edit</div>
+  </div>
+
+  <div class="video-card">
+    <video class="portfolio-video" preload="metadata">
+      <source src="assets/vid2.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">Cinematic Reel</div>
+  </div>
+
+  <div class="video-card">
+    <video class="portfolio-video" preload="metadata">
+      <source src="assets/vid3.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">Music Video</div>
+  </div>
+
+</section>
+
+
+<style>
+.video-gallery{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+  gap:30px;
+  padding:40px 0;
+}
+
+.video-card{
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  border-radius:18px;
+  background:#111;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.35s ease;
+}
+
+.video-card:hover{
+  transform:translateY(-6px);
+}
+
+.video-card video{
+  width:100%;
+  display:block;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  pointer-events:none;
+}
+
+.video-title{
+  position:absolute;
+  bottom:18px;
+  left:18px;
+  color:white;
+  font-size:18px;
+  font-family:Arial, sans-serif;
+  font-weight:600;
+  background:rgba(0,0,0,0.45);
+  padding:8px 14px;
+  border-radius:30px;
+  backdrop-filter:blur(10px);
+}
+</style>
+
+
+<script>
+const cards = document.querySelectorAll(".video-card");
+let currentVideo = null;
+
+cards.forEach(card => {
+  const video = card.querySelector("video");
+
+  card.addEventListener("click", () => {
+
+    // stop currently playing video
+    if(currentVideo && currentVideo !== video){
+      currentVideo.pause();
+      currentVideo.currentTime = 0;
+    }
+
+    // play clicked video
+    if(video.paused){
+      video.play();
+      currentVideo = video;
+    }
+  });
+
+  // stop when completed
+  video.addEventListener("ended", () => {
+    video.pause();
+    video.currentTime = 0;
+    currentVideo = null;
+  });
+});
+</script>
