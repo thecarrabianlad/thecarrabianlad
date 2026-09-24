@@ -10,11 +10,11 @@
 <img src="https://img.shields.io/badge/PORTFOLIO-161B22?style=for-the-badge&logo=google-chrome&logoColor=58A6FF"/>
 </a>
 &nbsp;
-<a href="https://github.com/YOUR_USERNAME">
+<a href="https://github.com/thecarrabianlad">
 <img src="https://img.shields.io/badge/GITHUB-161B22?style=for-the-badge&logo=github&logoColor=FFFFFF"/>
 </a>
 &nbsp;
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<a href="https://www.linkedin.com/in/sarthak-narula-b063b7278/">
 <img src="https://img.shields.io/badge/LINKEDIN-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2"/>
 </a>
 
@@ -71,7 +71,7 @@ A cross-platform student productivity app built around everyday organization.
 
 <br><br>
 
-<a href="https://github.com/YOUR_USERNAME/aether">
+<a href="https://github.com/thecarrabianlad/aether">
 <img src="https://img.shields.io/badge/VIEW%20PROJECT-58A6FF?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -93,7 +93,7 @@ A practical networking project focused on exploring network information and fund
 
 <br><br>
 
-<a href="https://github.com/YOUR_USERNAME/netwik">
+<a href="https://github.com/thecarrabianlad/netwik">
 <img src="https://img.shields.io/badge/VIEW%20PROJECT-58A6FF?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -119,7 +119,7 @@ A lightweight task manager built to explore frontend development and application
 
 <br><br>
 
-<a href="https://github.com/YOUR_USERNAME/todo-list">
+<a href="https://github.com/thecarrabianlad/todo-list">
 <img src="https://img.shields.io/badge/VIEW%20PROJECT-58A6FF?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
