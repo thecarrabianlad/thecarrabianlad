@@ -1,55 +1,26 @@
-# Hi, I'm Sarthak Narula
+<div align="center">
 
-Computer Science Engineering student at **Bennett University**, focused on building practical software and understanding how systems work.
+# Sarthak Narula
 
-I work across **web development, Flutter, Linux, networking, Python, and backend development**, with a particular interest in building useful applications and experimenting with systems and security.
+### `CSE Student • Developer • Builder`
 
-## Current Focus
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Building+things+that+actually+work.;Exploring+Linux+%26+Networking.;Learning+by+building+projects.;Turning+ideas+into+software." alt="Typing SVG" />
 
-- Full-stack and frontend development
-- Flutter and cross-platform applications
-- Computer networks and network security
-- Linux and operating systems
-- Python and backend development
-- Building practical projects and documenting what I learn
+<br>
 
-## Featured Projects
+[![Portfolio](https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=google-chrome&logoColor=58A6FF)](https://thecarrabianlad.github.io/thecarrabianlad/)
+[![GitHub](https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/YOUR_LINKEDIN)
 
-| Project | Description |
-| --- | --- |
-| [Portfolio](https://thecarrabianlad.github.io/thecarrabianlad/) | My personal portfolio showcasing my projects, skills, and development work |
-| **Aether** | A cross-platform student productivity app for daily planning, habits, routines, classes, and syllabus tracking |
-| **NetWik** | A network information application focused on networking concepts and system information |
-| **Todo List** | A task-management application built to practice frontend development and application logic |
-
-## Education
-
-**Bennett University**  
-Bachelor's Degree in Computer Science Engineering  
-2026 – Present
-
-## Certificate
-
-**Problem Solving Using Computational Thinking**  
-September 2026
-
-## Technologies
-
-**Languages:**  
-Python · JavaScript · Dart · HTML · CSS
-
-**Frameworks & Tools:**  
-Flutter · React · Vite · FastAPI · Git · GitHub
-
-**Platforms & Services:**  
-Linux · Supabase
-
-## Find Me Online
-
-- [Portfolio](https://thecarrabianlad.github.io/thecarrabianlad/)
-- [GitHub](https://github.com/thecarrabianlad)
-- [LinkedIn](https://www.linkedin.com/in/sarthak-narula-b063b7278/)
+</div>
 
 ---
 
-I'm building projects, learning how systems work under the hood, and turning that knowledge into practical software.
+## `whoami`
+
+```text
+Sarthak Narula
+├── Computer Science Engineering @ Bennett University
+├── Interested in systems, networking & software
+├── Building practical projects instead of collecting tutorials
+└── Currently learning → Linux • Networks • Backend • Flutter
